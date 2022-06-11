@@ -36,8 +36,11 @@ const ImageComponent = () => {
     <>
       <div className="container mt-3">
         <div className="row">
-          <div className="col-md-12 text-center">
-            <h3 className="text-center text-muted"> Spacetagram</h3>
+          <div className="col-md-12 text-center ">
+            <h3> Spacetagram</h3>
+            <p className="text-muted">
+              Welcome to Spacetagram, You can find beautiful Photos of Mars here{" "}
+            </p>
             {loading && <Loading />}
             {isError && <Error />}
           </div>

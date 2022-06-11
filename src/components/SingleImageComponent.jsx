@@ -20,8 +20,12 @@ const SingleImageComponent = ({ data }) => {
             height="200px"
           />
           <Card.Body>
-            <Card.Text className="text-muted">{data.camera.name}</Card.Text>
-            <Card.Text className="text-muted">{data.earth_date}</Card.Text>
+            <Card.Text className="text-muted">
+              Captured By: {data.camera.name}
+            </Card.Text>
+            <Card.Text className="text-muted">
+              Date: {data.earth_date}
+            </Card.Text>
             <div variant="light" onClick={() => handleLike()}>
               <BsFillHeartFill
                 className="bs-icon"
